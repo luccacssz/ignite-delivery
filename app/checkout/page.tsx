@@ -11,16 +11,13 @@ import { useCart } from '../context/CartContext'
 const Checkout = () => {
   const { cart } = useCart()
   return (
-    <div className="flex w-[78%] m-auto bg-red-950">
-      <div className="w-1/2">
+    <div className="flex w-[78%] m-auto gap-12">
+      <div className="w-full">
         <Delivery />
         <Payment />
       </div>
-      <div className="flex flex-col justify-between w-full">
-        {cart.map((itemCart) => (
-          <ItemCart product={itemCart} />
-        ))}
-        <OrderSummary />
+      <div>
+        <Cart />
       </div>
     </div>
   )

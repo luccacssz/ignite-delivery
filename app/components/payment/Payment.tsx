@@ -1,6 +1,6 @@
 const Payment = () => {
   return (
-    <div className="bg-base-card w-full sm:w-[40rem] h-[10rem] rounded-md font-roboto px-4 py-2 mt-2">
+    <div className="bg-base-card w-full  h-[10rem] rounded-md font-roboto px-4 py-2 mt-2">
       <div>
         <div className="flex gap-2">
           <img src="/images/checkout/money.svg" alt="" />

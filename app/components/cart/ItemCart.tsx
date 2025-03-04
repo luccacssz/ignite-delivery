@@ -15,7 +15,7 @@ const ItemCart = ({ product }: InputCatalogProps) => {
     removeFromCart(id)
   }
   return (
-    <div className="mb-2 flex gap-2 bg-base-card 2xl:w-[25rem] py-4 px-10 sm:px-6 items-center border-b border-b-base-hover font-roboto ">
+    <div className="mb-2 flex gap-2 bg-base-card  py-4 px-4 sm:px-6 items-center border-b border-b-base-hover font-roboto ">
       <div>
         <img src={image} className="" alt="" />
       </div>

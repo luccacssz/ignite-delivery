@@ -1,6 +1,6 @@
 const OrderSummary = () => {
   return (
-    <div className="py-4 px-4 gap-2 flex flex-col w-full font-roboto">
+    <div className="gap-2 flex flex-col w-full h-full font-roboto ">
       <div className="flex justify-between items-center text-base-text text-md">
         <span>Total de itens</span>
         <span>R$ 29,70</span>

@@ -41,7 +41,7 @@ const SideBarCart = ({ visible, onClose }: SideBarCartProps) => {
 
       <div className="w-full flex justify-center">
         <button
-          className="mt-4 bg-product-purple-dark text-white rounded-xl px-12 py-2 mx-1"
+          className="mt-4 bg-product-purple-dark text-white rounded-xl px-2 py-2 mx-1 w-full"
           onClick={handleRedirectToCheckout}
         >
           Finalizar compra
