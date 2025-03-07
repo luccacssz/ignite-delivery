@@ -7,14 +7,13 @@ import { useCart } from '@/app/context/CartContext'
 import { useState } from 'react'
 
 const ItemCatalog = ({ product }: InputCatalogProps) => {
-  const { addToCart,  getQuantity } = useCart()
+  const { addToCart, getQuantity } = useCart()
   const { image, tags, name, description, price, id } = product
   const [counter, setCounter] = useState<number>(getQuantity(id) || 1)
   const handleAddItemCart = () => {
     addToCart(product, counter)
   }
 
- console.log('counter', counter, getQuantity(id))
   return (
     <div
       className="flex flex-col gap-4 bg-base-card p-6 relative w-[15.75rem]"

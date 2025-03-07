@@ -9,12 +9,14 @@ const Cart = () => {
 
   return (
     <div
-      className="bg-base-card p-8  sm:w-[28rem] w-full flex flex-col gap-4 justify-between items-center h-full"
+      className="bg-base-card p-8  xl:w-[28rem] w-full flex flex-col gap-4 justify-between items-center h-full"
       style={{ borderRadius: '6px 36px 6px 36px' }}
     >
       <div>
         {hasItemsCart
-          ? cart.map((itemCart) => <ItemCart product={itemCart} />)
+          ? cart.map((itemCart) => (
+              <ItemCart product={itemCart} key={itemCart.id} />
+            ))
           : 'Não há itens no carrinho'}
       </div>
 

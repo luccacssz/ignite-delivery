@@ -6,6 +6,7 @@ const Catalog = () => {
     <div className="grid sm:grid-cols-2 xl:grid-cols-4 place-items-center gap-12  lg:w-[80%] 2xl:w-[88%] w-full m-auto z-0">
       {dataCatalog.map((item) => (
         <ItemCatalog
+          key={item.id}
           product={item}
           tags={item.tags}
           image={item.image}

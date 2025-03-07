@@ -9,9 +9,8 @@ import OrderSummary from '../components/summary/OrderSummary'
 import { useCart } from '../context/CartContext'
 
 const Checkout = () => {
-  const { cart } = useCart()
   return (
-    <div className="flex w-[78%] m-auto gap-12">
+    <div className="flex flex-col xl:flex-row w w-[78%] m-auto gap-12 ">
       <div className="w-full">
         <Delivery />
         <Payment />

@@ -35,7 +35,7 @@ const SideBarCart = ({ visible, onClose }: SideBarCartProps) => {
       />
       <div className="mt-16 w-full">
         {cart.map((item) => (
-          <ItemCart product={item} />
+          <ItemCart product={item} key={item.id} />
         ))}
       </div>
 

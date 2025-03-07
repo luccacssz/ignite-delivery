@@ -17,7 +17,7 @@ const Payment = () => {
             className="w-4 ml-1"
             alt=""
           />
-          <span className="text-xs text-base-text">CARTÃO DE CRÉDITO</span>
+          <span className="text-xs text-base-text cursor-pointer">CARTÃO DE CRÉDITO</span>
         </div>
         <div className="bg-base-button w-[11rem] h-[3.19rem] rounded-md flex items-center gap-1">
           <img
@@ -25,7 +25,7 @@ const Payment = () => {
             className="w-4 ml-1"
             alt=""
           />
-          <span className="text-xs text-base-text">CARTÃO DE DÉBITO</span>
+          <span className="text-xs text-base-text cursor-pointer">CARTÃO DE DÉBITO</span>
         </div>
         <div className="bg-base-button w-[11rem] h-[3.19rem] rounded-md flex items-center gap-1">
           <img
@@ -33,7 +33,7 @@ const Payment = () => {
             className="w-4 ml-1"
             alt=""
           />
-          <span className="text-xs text-base-text">DINHEIRO</span>
+          <span className="text-xs text-base-text cursor-pointer">DINHEIRO</span>
         </div>
       </div>
     </div>

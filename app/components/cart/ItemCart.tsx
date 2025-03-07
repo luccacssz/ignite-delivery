@@ -15,9 +15,9 @@ const ItemCart = ({ product }: InputCatalogProps) => {
     removeFromCart(id)
   }
   return (
-    <div className="mb-2 flex gap-2 bg-base-card  py-4 px-4 sm:px-6 items-center border-b border-b-base-hover font-roboto ">
+    <div className="mb-2 flex gap-2 bg-base-card  py-4 px-4 sm:px-6 items-center border-b border-b-base-hover font-roboto">
       <div>
-        <img src={image} className="" alt="" />
+        <img src={image} className="hidden xl:block" alt="" />
       </div>
       <div className="w-full bg-red">
         <div className="flex justify-around  w-full">
@@ -27,7 +27,11 @@ const ItemCart = ({ product }: InputCatalogProps) => {
           </span>
         </div>
         <div className="flex ml-6 gap-4 ">
-          <InputNumber counter={counter} setCounter={setCounter} productId={id} />
+          <InputNumber
+            counter={counter}
+            setCounter={setCounter}
+            productId={id}
+          />
           <button
             className="flex items-center gap-1"
             onClick={handleRemoveItemCart}

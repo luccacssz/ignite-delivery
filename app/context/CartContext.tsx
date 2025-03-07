@@ -4,7 +4,7 @@ import { ItemCartProps } from '../components/cart/types/ItemCart'
 
 const initialCartState: ItemCartProps[] = []
 
-const CartContext = createContext({
+export const CartContext = createContext({
   cart: initialCartState,
   addToCart: (coffee: ItemCartProps, quantity: number) => {},
   removeFromCart: (id: number) => {},
