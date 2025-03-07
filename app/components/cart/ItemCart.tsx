@@ -17,7 +17,7 @@ const ItemCart = ({ product }: InputCatalogProps) => {
   return (
     <div className="mb-2 flex gap-2 bg-base-card  py-4 px-4 sm:px-6 items-center border-b border-b-base-hover font-roboto">
       <div>
-        <img src={image} className="hidden xl:block" alt="" />
+        <img src={image} className="hidden xl:block" />
       </div>
       <div className="w-full bg-red">
         <div className="flex justify-around  w-full">
